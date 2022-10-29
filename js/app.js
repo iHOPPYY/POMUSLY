@@ -43,7 +43,7 @@ var allPossibleModes = {
 		localStorage: localStorage.currentPomodoroValue,
 		alertMessage: "<strong>Time is up!</strong> Lets take a break",
 		titleDisplayText: "Time to Work!",
-		progressColor: "0c326b",
+		progressColor: "crimson",
 		sound: new Howl({
 			src: ["assets/sounds/alert-work.mp3"],
 		}),
@@ -55,7 +55,7 @@ var allPossibleModes = {
 		localStorage: localStorage.currentLongBreakValue,
 		alertMessage: "<strong>Long break over!</strong> Lets get back to work",
 		titleDisplayText: "Time for a Break",
-		progressColor: "#007bff",
+		progressColor: "crimson",
 		sound: new Howl({
 			src: ["assets/sounds/alert-long-break.mp3"],
 		}),
@@ -67,7 +67,7 @@ var allPossibleModes = {
 		localStorage: localStorage.currentShortBreakValue,
 		alertMessage: "<strong>Short break over!</strong> Lets get back to work",
 		titleDisplayText: "Time for a Break",
-		progressColor: "#28a745",
+		progressColor: "crimson",
 		sound: new Howl({
 			src: ["assets/sounds/alert-short-break.mp3"],
 		}),
@@ -229,6 +229,7 @@ pomodoros.addEventListener("click", function () {
 	buttonsDefaultState();
 	stopBackGroundMusic();
 	numberSessions = 0;
+	event.target.style.backgroundColor = '#d15d5f';
 });
 
 shortBreak.addEventListener("click", function () {

@@ -23,6 +23,10 @@ body {
 	font-family: "Arvo", serif;
 }
 
+.fa,.fas{
+	font-weight: 900;
+    color: crimson;
+}
 /*============
   Main Content
   ============= */
@@ -42,6 +46,7 @@ body {
 #timeLeft {
 	font-weight: bold;
 	font-size: 5rem;
+	color:#ececec;
 }
 
 .alert {
@@ -93,33 +98,19 @@ body {
 /*========
   Buttons
   ======== */
-.scrolltop-wrap {
-	color: var(--main-red-color);
-	margin-bottom: 2rem;
-	position: fixed;
-	z-index: 100;
-	right: 5%;
-	bottom: 5%;
-	display: none;
-}
-
-.back-to-top-button {
-	cursor: pointer;
-	color: var(--main-red-color);
-}
 
 #pomodoros,
 #shortBreak,
 #longBreak {
 	text-align: center;
-	border-radius: var(--lg-border-radius);
-	padding: 0.65rem 1.5rem 0.45rem 1.5rem;
+	text-decoration:rgb(255, 255, 255);
+	color: white !important;
 }
 
 #saveButton,
 #clearButton,
-#clearTasksButton {
-	font-size: 1.1rem;
+#clearTasksButton{
+	font-size:1.1rem;
 	padding: 0.8rem 1.6rem;
 	margin: 0.5rem auto;
 }
@@ -130,28 +121,40 @@ body {
 #saveButton,
 #clearButton,
 #clearTasksButton {
-	border-radius: 2rem;
+	border-width: 0;
 	line-height: 2rem;
+
 }
+
+
 
 #startButton,
 #stopButton,
 #resetButton {
-	box-shadow: 0 9px #999;
+	box-shadow: 0 9px #F2D7D9;
+	text-decoration-color: crimson;
+	justify-content: center;
+	display:flex;	
+	background-color:white;
+	
 }
 
 .buttonClicked {
-	box-shadow: 0 5px #666 !important;
+	box-shadow: 0 5px brown!important;
 	transform: translateY(0.25rem);
+	transition-duration: 0.2s;
 }
 
 .button-pressed-no-shadow:active {
 	transform: translateY(0.25rem);
+	transition-duration: 0.2s;
 }
 
 .button-pressed-effect:active {
 	transform: translateY(0.25rem);
-	box-shadow: 0 5px #666 !important;
+	box-shadow: 0 5px brown!important;
+	background-color:crimson;
+	justify-content: center;
 }
 
 .btn-group-lg > .btn,
@@ -162,12 +165,14 @@ body {
 .btn-outline-secondary:focus,
 .btn-outline-secondary.focus {
 	box-shadow: none;
+
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus {
 	box-shadow: none;
+	background-color: crimson;
 }
 
 /*======
@@ -584,19 +589,6 @@ input:checked + .slider:before {
 	transform: scaleX(1);
 }
 
-/* ===============
-  Scroll Indicator
-  ================ */
-#scrollIndicator {
-	background: var(--main-red-color);
-	z-index: 150;
-	height: 4px;
-	border-radius: var(--sm-border-radius);
-	width: 0%;
-	position: fixed;
-	top: 0;
-}
-
 /* ===========
   Progress Bar
   ============ */
@@ -616,12 +608,12 @@ input:checked + .slider:before {
 	width: 260px;
 	height: 260px;
 	margin: auto;
-	background: #fff;
+	background: #EF9F9F;
 	text-align: center;
 	padding-top: 27%;
 }
 
 .progress-value {
-	background-image: -webkit-linear-gradient(left, var(--main-red-color) 50%, transparent 50%),
-		-webkit-linear-gradient(left, #ddd 50%, var(--main-red-color) 50%);
+	background-image: -webkit-linear-gradient(right, var(--main-red-color) 50%, transparent 50%),
+		-webkit-linear-gradient(right, var(--main-red-color) 50%);
 }
