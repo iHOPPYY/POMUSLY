@@ -68,6 +68,7 @@ var allPossibleModes = {
 		alertMessage: "<strong>Short break over!</strong> Lets get back to work",
 		titleDisplayText: "Time for a Break",
 		progressColor: "crimson",
+		
 		sound: new Howl({
 			src: ["assets/sounds/alert-short-break.mp3"],
 		}),
@@ -229,7 +230,8 @@ pomodoros.addEventListener("click", function () {
 	buttonsDefaultState();
 	stopBackGroundMusic();
 	numberSessions = 0;
-	event.target.style.backgroundColor = '#d15d5f';
+	
+	
 });
 
 shortBreak.addEventListener("click", function () {
@@ -240,6 +242,7 @@ shortBreak.addEventListener("click", function () {
 	buttonsDefaultState();
 	stopBackGroundMusic();
 	numberSessions = 0;
+	
 });
 
 longBreak.addEventListener("click", function () {
@@ -250,6 +253,8 @@ longBreak.addEventListener("click", function () {
 	buttonsDefaultState();
 	stopBackGroundMusic();
 	numberSessions = 0;
+	
+	style.backgroundColor="rgb(209 93 95)"
 });
 
 //Function that takes 1 away from timeLeft every 1000ms/1s

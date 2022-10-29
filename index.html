@@ -61,7 +61,7 @@
 			<!-- Brand Name -->
 			<div class="pomusly-navbar ">
 				<nav class="d-flex" id="brand">
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand " href="#">
 						<span style="color:white"id="brandName" >pomusly</span>
 					</a>
 					<!-- Only Visible when small -->
@@ -85,12 +85,13 @@
 				</nav>
 			</div><hr>
 			<!-- NAVBAR -->
+		<div class="timer-container">
 			<div class="container text-align-center mt-3">
-				<div class="row  justify-content-center text-align-center">
+				<div class="row  justify-content-center text-align-center" style="padding:5px;">
 					<div class="col-12 px-0 ">
 						<ul class="nav nav-pills">
 							<div class="col-4 px-0">
-								<a class="nav-link active pt-2 " id="pomodoros" data-toggle="tab" role="tab" aria-selected="false" href="/">Focus</a>
+								<a class="nav-link  pt-2" id="pomodoros" data-toggle="tab" role="tab" aria-selected="false" href="/">Focus</a>
 							</div>
 							<div class="col-4 px-0">
 								<a class="nav-link pt-2" id="shortBreak" data-toggle="tab" role="tab" aria-selected="false" href="/">Short Break</a>
@@ -129,13 +130,14 @@
 			<div class="container-fluid">
 				<div class="row">
 					<!-- Time Left and Progress Bar -->
-					<div class="col-12 pt-0 d-flex justify-content-center">
+					<div class="col-12 pt-0 d-flex justify-content-center" style="padding:20px 0 40px 0 !important;">
 						<div class="radial-progress-bar progress-value">
 							<div class="overlay">
 								<h1 id="timeLeft"></h1>
 							</div>
 						</div>
 					</div>
+				</div>
 					<!-- Start, Stop, Reset Buttons -->
 					<div class="col">
 						<div class="container d-flex justify-content-around">

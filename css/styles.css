@@ -95,6 +95,13 @@ body {
 	}
 }
 
+.timer-container{
+	
+	
+
+  
+}
+
 /*========
   Buttons
   ======== */
@@ -105,6 +112,13 @@ body {
 	text-align: center;
 	text-decoration:rgb(255, 255, 255);
 	color: white !important;
+	font-size:15px !important;	
+	
+}
+
+.nav-link.active{
+	background-color: rgb(217 85 80) !important;
+
 }
 
 #saveButton,
@@ -126,13 +140,15 @@ body {
 
 }
 
-
+.btn-success{
+	text-decoration-color: #FF9494 !important;
+}
 
 #startButton,
 #stopButton,
 #resetButton {
 	box-shadow: 0 9px #F2D7D9;
-	text-decoration-color: crimson;
+	color: #FF9494 !important;
 	justify-content: center;
 	display:flex;	
 	background-color:white;
@@ -140,7 +156,7 @@ body {
 }
 
 .buttonClicked {
-	box-shadow: 0 5px brown!important;
+	box-shadow: 0 5px rgb(217 85 80)!important;
 	transform: translateY(0.25rem);
 	transition-duration: 0.2s;
 }
@@ -152,7 +168,7 @@ body {
 
 .button-pressed-effect:active {
 	transform: translateY(0.25rem);
-	box-shadow: 0 5px brown!important;
+	box-shadow: 0 5px rgb(217 85 80)!important;
 	background-color:crimson;
 	justify-content: center;
 }
@@ -601,6 +617,7 @@ input:checked + .slider:before {
 	display: flex;
 	margin: 20px;
 	min-width: 300px;
+	
 }
 
 .radial-progress-bar .overlay {
@@ -611,6 +628,7 @@ input:checked + .slider:before {
 	background: #EF9F9F;
 	text-align: center;
 	padding-top: 27%;
+	
 }
 
 .progress-value {
