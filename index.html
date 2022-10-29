@@ -46,7 +46,7 @@
 	</head>
 
 	<body>
-		<div style=" background: linear-gradient(to right, #b8c1ec, #eebbc3); background-repeat: no-repeat; background-size: cover;">
+		<div style=" background: linear-gradient(to right, #b8c1ec, #eebbc3); background-repeat: no-repeat; background-size: cover; height:100%">
 		
 		<!-- Scroll Indicator -->
 		<div class="line" id="scrollIndicator"></div>
@@ -61,11 +61,10 @@
 				</button>
 			</div>
 			<!-- Brand Name -->
-			<div class="d-flex justify-content-center navbar navbar-light bg-light border-bottom">
-				<nav class="navbar navbar-light bg-light py-0 justify-content-center" id="brand">
-					<a class="navbar-brand" href="/">
-						<img src="assets/img/logo.png" width="50" height="50" class="align-top" alt="PomodoroTimers Logo" />
-						<span id="brandName">Pomodoro</span>
+			<div class="pomusly-navbar">
+				<nav class="d-flex" id="brand">
+					<a class="navbar-brand" href="#">
+						<span id="brandName">pomusly</span>
 					</a>
 					<!-- Only Visible when small -->
 					<ul class="nav nav-pills justify-content-end">
@@ -86,19 +85,19 @@
 						</li>
 					</ul>
 				</nav>
-			</div>
+			</div><hr>
 			<!-- NAVBAR -->
-			<div class="container mt-3">
-				<div class="row justify-content-end">
-					<div class="col-6 px-0">
+			<div class="container text-align-center mt-3">
+				<div class="row justify-content-center text-align-center">
+					<div class="col-12 px-0 ">
 						<ul class="nav nav-pills">
-							<div class="col-lg-4 px-0">
+							<div class="col-4 px-0">
 								<a class="nav-link active pt-2 nav-underline" id="pomodoros" data-toggle="tab" role="tab" aria-selected="false" href="/">Focus</a>
 							</div>
-							<div class="col-lg-4 px-0">
+							<div class="col-4 px-0">
 								<a class="nav-link pt-2 nav-underline" id="shortBreak" data-toggle="tab" role="tab" aria-selected="false" href="/">Short Break</a>
 							</div>
-							<div class="col-lg-4 px-0">
+							<div class="col-4 px-0">
 								<a class="nav-link pt-2 nav-underline" id="longBreak" data-toggle="tab" role="tab" aria-selected="false" href="/">Long Break</a>
 							</div>
 						</ul>
@@ -140,16 +139,16 @@
 						</div>
 					</div>
 					<!-- Start, Stop, Reset Buttons -->
-					<div class="col-12">
+					<div class="col">
 						<div class="container d-flex justify-content-around">
 							<div class="row">
-								<div class="col-md-4">
+								<div class="col-4">
 									<button type="button" class="button-pressed-effect btn btn-lg btn-success w-100 mb-3" id="startButton">Start</button>
 								</div>
-								<div class="col-md-4">
+								<div class="col-4">
 									<button type="button" class="button-pressed-effect btn btn-danger btn-lg w-100 mb-3" id="stopButton">Stop</button>
 								</div>
-								<div class="col-md-4">
+								<div class="col-4">
 									<button type="button" class="button-pressed-effect btn btn-secondary btn-lg w-100 mb-3" id="resetButton">Reset</button>
 								</div>
 							</div>
@@ -158,73 +157,6 @@
 				</div>
 			</div>
 		</div>
-
-	
-
-		
-			<div class="description-section row justify-content-center">
-				<div class="col-10 col-lg-7 mb-4">
-					<h1 class="section-title text-center pb-3">How to use PomodoroTimers?</h1>
-					<div class="section-title-border"></div>
-					<div class="section-content">
-						<dl class="row">
-							<dt class="col-sm-2">Step 1</dt>
-							<dd class="col-sm-10">Decide on the task to be done</dd>
-							<dt class="col-sm-2">Step 2</dt>
-							<dd class="col-sm-10">Start working on your task for 25 minutes</dd>
-							<dt class="col-sm-2">Step 3</dt>
-							<dd class="col-sm-10">Take a 5 minute break after 25 minutes is up</dd>
-							<dt class="col-sm-2">Step 4</dt>
-							<dd class="col-sm-10">Repeat steps 1 to 3 until you have complete 4 sessions. Take a longer 20 minute break</dd>
-							<dt class="col-sm-2">Step 5</dt>
-							<dd class="col-sm-10">Go back to step 1 and repeat the process until task is complete</dd>
-						</dl>
-					</div>
-				</div>
-			</div>
-
-			<div class="description-section row justify-content-center pb-5">
-				<div class="col-10 col-lg-7">
-					<h1 class="section-title text-center pb-3">Why use PomodoroTimers?</h1>
-					<div class="section-title-border"></div>
-					<div class="section-content">
-						<dl class="row">
-							<dt class="col-sm-1">
-								<i class="far fa-hand-point-right fa-2x"></i>
-							</dt>
-							<dd class="col-sm-11 pb-3">Customize times for Focus, Short Breaks and Long Breaks</dd>
-							<dt class="col-sm-1">
-								<i class="far fa-hand-point-right fa-2x"></i>
-							</dt>
-							<dd class="col-sm-11 pb-3">Charming timer alert sounds</dd>
-							<dt class="col-sm-1">
-								<i class="far fa-hand-point-right fa-2x"></i>
-							</dt>
-							<dd class="col-sm-11 pb-3">Logging system to keep track of Focus sessions and breaks</dd>
-							<dt class="col-sm-1">
-								<i class="far fa-hand-point-right fa-2x"></i>
-							</dt>
-							<dd class="col-sm-11 pb-3">Timer ticking sounds (optional)</dd>
-							<dt class="col-sm-1">
-								<i class="far fa-hand-point-right fa-2x"></i>
-							</dt>
-							<dd class="col-sm-11 pb-3">Long break intervals (optional)</dd>
-							<dt class="col-sm-1">
-								<i class="far fa-hand-point-right fa-2x"></i>
-							</dt>
-							<dd class="col-sm-11 pb-3">Multiple background music (optional)</dd>
-							<dt class="col-sm-1">
-								<i class="far fa-hand-point-right fa-2x"></i>
-							</dt>
-							<dd class="col-sm-11 pb-3">Timer ending notification (optional)</dd>
-							<dt class="col-sm-1">
-								<i class="far fa-hand-point-right fa-2x"></i>
-							</dt>
-							<dd class="col-sm-11 pb-3">Dark Mode (optional)</dd>
-						</dl>
-					</div>
-				</div>
-			</div>
 		</div>
 
 		<!-- Back to top button -->
